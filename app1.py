@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import streamlit as st
 from urllib.parse import urlparse
 #import psycopg2
@@ -9,10 +8,10 @@ warnings.filterwarnings("ignore")
 
 st.title("DNA Hackathon", anchor=None)
 
-selected_database = st.selectbox("Select the Databse Name", ("student", "employee"))
+selected_database = st.selectbox("Select the Databse Name", ("None","student", "employee"))
 st.write(selected_database)
 
-selected_schema = st.selectbox("Select the Schema Name", ("info", "contact"))
+selected_schema = st.selectbox("Select the Schema Name", ("None","info", "contact"))
 st.write(selected_schema)
 
 first_name = st.text_input('Enter your First Name', 'None')
