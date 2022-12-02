@@ -31,4 +31,4 @@ address = st.text_input('Enter your Address', 'None')
 st.write(address)
 
 if st.button("submit"):
-    print('Adde to the database')
+    st.write('Adde to the database')
