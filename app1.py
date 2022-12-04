@@ -29,7 +29,7 @@ address = st.text_input('Enter your Address')
 st.write(address)
 
 user = os.environ.get('user')
-password = os.environ('password')
+password = os.environ.get('password')
 insert_query = """
 
     INSERT INTO INFO.DETAILS (FIRST_NAME,LAST_NAME,EMAIL_ID,CONTACT_NO,ADDRESS) 
